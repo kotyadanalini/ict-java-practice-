@@ -1,0 +1,38 @@
+Output: Ennngineeeriinngg
+E3ngin3er2i2n2g
+
+
+
+
+package com.count;
+import java.util.*;
+public class Engineering {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int c=1;
+		String d="";
+	StringBuilder sb=new StringBuilder();
+		for(int i=0;i<s.length();i++) {
+			if(i<s.length()-1&&s.charAt(i)==s.charAt(i+1)) {
+				c++;
+			}else {
+				
+			
+			
+				if(c>1) {
+				sb.append(c);
+				c=1;
+			}
+		
+			sb.append(s.charAt(i));
+
+		
+			}
+			
+		}
+		System.out.println(sb);
+	}
+	}
+	
