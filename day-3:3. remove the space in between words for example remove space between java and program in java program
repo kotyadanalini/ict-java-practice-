@@ -1,0 +1,23 @@
+i/p:java is aprogramming language
+o/p:javaisaprogramminglanguage
+
+
+
+package com.space;
+import java.util.*;
+
+public class Spaces {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String res="";
+		String c[]=s.split("\\s");
+		for(int i=0;i<c.length;i++) {
+			res+=s.join(res, c[i]);
+		}
+		System.out.println(res);
+
+	}
+
+}
