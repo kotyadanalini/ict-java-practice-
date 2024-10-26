@@ -1,0 +1,78 @@
+Hello
+Hill
+HelloHill
+hello
+HELLO
+5
+l
+-4
+false
+lo
+false
+false
+Hello
+false
+false
+Hello10
+Hello
+H
+e
+l
+l
+o
+Heaao
+Heklo
+
+
+
+
+package com.Strings;
+import java.util.*;
+public class Stringmethods {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String s1=sc.nextLine();
+		String s2=s.concat(s1);
+		System.out.println(s2);
+		String s3=s.toLowerCase();
+		System.out.println(s3);
+		String s4=s.toUpperCase();
+		System.out.println(s4);
+		int  s5=s.length();
+		System.out.println(s5);
+		char s6=s.charAt(2);
+		System.out.println(s6);
+		int s7=s.compareTo(s1);
+		System.out.println(s7);
+		boolean s8=s.equals(s1);
+		System.out.println(s8);
+		String s9=s.substring(3);
+		System.out.println(s9);
+		boolean e=s.isEmpty();
+		System.out.println(e);
+		boolean e1=s.contains(s1);
+		System.out.println(e1);
+		String e3=s.trim();
+		System.out.println(e3);
+		boolean e4=s.startsWith("s");
+		System.out.println(e4);
+		boolean e5=s.endsWith("n");
+		System.out.println(e5);
+		int a=10;
+		String e6=String.valueOf(a);
+		System.out.println(s+e6);
+		String e7=s.replace("j","k");
+		System.out.println(e7);
+		char []c=s.toCharArray();
+		for(int i=0;i<s.length();i++) {
+			System.out.println(c[i]);
+		}
+		String e8=s.replaceAll("l", "a");
+		System.out.println(e8);
+		
+		String e9=s.replaceFirst("l", "k");
+		System.out.println(e9);	
+	}
+}
